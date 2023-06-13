@@ -641,9 +641,7 @@ body {
 
     selectTrack(0);
 
-    music.addEventListener('ended',function(){
-      //play next song
-    });
+    audio.loop = true;
 
     playPauseButton.on("click", playPause);
 
