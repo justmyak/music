@@ -642,7 +642,7 @@ body {
     selectTrack(0);
 
     audio.addEventListener('ended',function(){
-      //play next song
+      selectTrack(1);
     });
 
     playPauseButton.on("click", playPause);
