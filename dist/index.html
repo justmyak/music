@@ -640,23 +640,6 @@ body {
     audio = new Audio();
 
     selectTrack(0);
-    
-    var currentSong = 0;
-    var len = trackUrl.length;
-
-    function playSong(index) {
-      audio.src = trackUrl[index];
-      audio.play();
-    }
-    song.addEventListener("ended", function playNextS() {
-      currentSong++;
-      if (currentSong == len) {
-        currentSong = 0;
-        playSong(currentSong);
-      }
-      else{
-        playSong(currentSong);
-      }
 
     audio.loop = true;
 
