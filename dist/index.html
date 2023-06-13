@@ -661,7 +661,11 @@ body {
       selectTrack(-1);
     });
     playNextTrackButton.on("click", function () {
-      selectTrack(1);
+      if (trackName = "The Fray") {
+        selectTrack(0);
+      } else {
+        selectTrack(1);
+      }
     });
   }
 
