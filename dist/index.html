@@ -350,7 +350,7 @@ body {
         <img src="https://dl.dropboxusercontent.com/s/mn1y13jsbek1blt/george%20ezra%20cd.jpg?dl=0" id="_9">
         <img src="https://dl.dropboxusercontent.com/s/iub6a9tr6xmssig/truslow%20cd.jpg?dl=0" id="_10">
         <img src="https://dl.dropboxusercontent.com/s/e0i0w3v7enugnee/1922%20cd.jpg?dl=0" id="_11">
-        <img src="https://dl.dropboxusercontent.com/s/yrumhievwpqjhc3/newjeans%20cd.jpg?dl=0" id="_12">
+        <img src="https://dl.dropboxusercontent.com/s/d1d46ur7np46vlt/newjeans%20omg.jpg?dl=0" id="_12">
         <img src="https://dl.dropboxusercontent.com/s/ryzde3w3n6tedo8/alex%20porat%20cd.jpg?dl=0" id="_13">
         <img src="https://dl.dropboxusercontent.com/s/olgnv0843fwd7ks/summertime%20sadness%20cd.jpg?dl=0" id="_14">
         <img src="https://dl.dropboxusercontent.com/s/hgmu1iiapdhbzm0/fuiji%20kaze.jpg?dl=0" id="_15">
@@ -641,7 +641,9 @@ body {
 
     selectTrack(0);
 
-    audio.loop = true;
+    music.addEventListener('ended',function(){
+      //play next song
+    });
 
     playPauseButton.on("click", playPause);
 
